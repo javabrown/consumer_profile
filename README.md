@@ -1,12 +1,13 @@
 Consumer-Profile API
 ====================
 
-This HATEOAS Driven REST-3 APIs project I created as part of **ConsumerReport** interview assignment. It servers CRUD operation on UserProfile Resource.
+This HATEOAS Driven REST-3 APIs application. I developed this project as part of my **ConsumerReport Inc.** assignment. It serves CRUD operation on UserProfile Resource.
+
 
 Following tools and technology I have used:
 
 * Java 8
-* SpringBoot 2.1
+* SpringBoot 2.1 & Spring HATEOAS 0.25.2
 * JPA & H2Database
 * Springfox-swagger 2.9
 * AWS ECS, Docker, ECR
