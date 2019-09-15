@@ -19,6 +19,16 @@ CREATE TABLE users (
 );
 
 INSERT INTO addresses (street, city, state, zip) VALUES
-('512 Azalea Dr', 'White Plains', 'NY', '08902');
+('Virginia Rd', 'White Plains', 'NY', '10603');
 INSERT INTO users (first_name, last_name, email, address_id) VALUES
   ('Raja', 'Khan', 'getrk@yahoo.com', LAST_INSERT_ID());
+
+INSERT INTO addresses (street, city, state, zip) VALUES
+('512 Azalea Dr', 'N Brunswick', 'NJ', '08902');
+INSERT INTO users (first_name, last_name, email, address_id) VALUES
+  ('Zidan', 'Khan', 'getrk2@gmail.com', LAST_INSERT_ID());
+
+INSERT INTO addresses (street, city, state, zip) VALUES
+('512 Azalea Dr', 'N Brunswick', 'NJ', '08902');
+INSERT INTO users (first_name, last_name, email, address_id) VALUES
+  ('John', 'Smith', 'someemail@gmail.com', LAST_INSERT_ID());
