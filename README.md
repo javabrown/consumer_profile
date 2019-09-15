@@ -4,7 +4,7 @@ Consumer-Profile API
 This HATEOAS Driven REST-3 APIs application. I developed this project as part of my **ConsumerReport Inc.** assignment. It serves CRUD operation on UserProfile Resource.
 
 
-Following tools and technology I have used:
+**Following tools and technology I have used:**
 
 * Java 8
 * SpringBoot 2.1 & Spring HATEOAS 0.25.2
@@ -14,7 +14,13 @@ Following tools and technology I have used:
 * Terraform (for resource creation & deployment)
 * Linux, IntelliJ, Maven
 
+**Core Application Flow Diagram**:
+
+![alt text](https://raw.githubusercontent.com/javabrown/consumer_profile/master/src/main/resources/docs/basic-flow.png)
+
+
 -------
+**Core Application Flow Diagram**:
 
 |Method                |API                            |Description                         |
 |----------------|-------------------------------|-----------------------------|
@@ -34,5 +40,7 @@ Following tools and technology I have used:
 ----
 
 ##### Build Instruction:
-``mvn clean build test package``
+* Package: ``mvn clean test package``
+* Run: ``java -jar target/consumer_profile-xx.jar``
+* Make Docker Image: `` docker build -t consumer_profile .`` 
 
