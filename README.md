@@ -1,7 +1,7 @@
 Consumer-Profile API
 ====================
 
-This HATEOAS Driven REST-3 APIs application. I developed this project as part of my **ConsumerReport Inc.** assignment. It serves CRUD operation on UserProfile Resource.
+This HATEOAS Driven REST-3 APIs application. I developed this project as part of my **ConsumerReport.** assignment. It serves CRUD operation on UserProfile Resource.
 
 
 **Following tools and technology I have used:**
