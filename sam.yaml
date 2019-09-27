@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: API with the aws-serverless-java-container library
+
+#Globals:
+#  Api:
+#    # API Gateway regional endpoints
+#    EndpointConfiguration: REGIONAL
+
+Resources:
+  CoreApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.consumer_reports.codetest.LambdaHandler::handleRequest
+      Runtime: java8
+      CodeUri: target/consumer_profile-0.0.1-SNAPSHOT.jar
+      MemorySize: 1512
+      Policies: AWSLambdaBasicExecutionRole
+      Timeout: 60
+      Events:
+        GetResource:
+          Type: Api
+          Properties:
+            Path: /{proxy+}
+            Method: any
+
+Outputs:
+  ConsumerProfileApi:
+    Description: URL for application
+    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Stage/users'
+    Export:
+      Name: ConsumerProfileApi
